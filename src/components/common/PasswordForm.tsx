@@ -155,7 +155,7 @@ const PasswordForm: FC<OwnProps> = ({
       </div>
       {description && <p className="description">{description}</p>}
       {onSubmit && (canSubmit || shouldShowSubmit) && (
-        <Button size="smaller" type="submit" ripple={!noRipple} isLoading={isLoading} disabled={!canSubmit}>
+        <Button size="smaller" id="password-button-post" type="submit" ripple={!noRipple} isLoading={isLoading} disabled={!canSubmit}>
           {submitLabel}
         </Button>
       )}

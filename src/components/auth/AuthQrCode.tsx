@@ -172,7 +172,7 @@ const AuthCode = ({
           <li><span>{lang('LoginQRHelp3')}</span></li>
         </ol>
         {isAuthReady && (
-          <Button size="smaller" isText onClick={habdleReturnToAuthPhoneNumber}>{lang('LoginQRCancel')}</Button>
+          <Button size="smaller" id="to-auth-phone-number" isText onClick={habdleReturnToAuthPhoneNumber}>{lang('LoginQRCancel')}</Button>
         )}
         {suggestedLanguage && suggestedLanguage !== language && continueText && (
           <Button size="smaller" isText isLoading={isLoading} onClick={handleLangChange}>{continueText}</Button>

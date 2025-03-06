@@ -69,7 +69,7 @@ const Auth: FC<StateProps> = ({
       case 'authorizationStateWaitQrCode':
         return <AuthQrCode />;
       default:
-        return isMobile ? <AuthPhoneNumber /> : <AuthQrCode />;
+        return <AuthPhoneNumber />;
     }
   }
 
@@ -86,7 +86,7 @@ const Auth: FC<StateProps> = ({
       case 'authorizationStateWaitQrCode':
         return 4;
       default:
-        return isMobile ? 3 : 4;
+        return 3;
     }
   }
 
